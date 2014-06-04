@@ -1,0 +1,103 @@
+{
+
+    "container_1": [
+
+        {
+            "label": "Freestyle Stroke",
+            "y": 18,
+            "name": "Freestyle Stroke"
+        },
+        {
+            "label": "Breast Stroke",
+            "y": 29,
+            "name": "Breast Stroke"
+        },
+        {
+            "label": "Back Stroke",
+            "y": 40,
+            "name": "Back Stroke"
+        },
+        {
+            "label": "Butterfly Stroke",
+            "y": 34,
+            "name": "Butterfly Stroke"
+        },
+        {
+            "label": "Side Stroke",
+            "y": 24,
+            "name": "Side Stroke"
+        }
+    ],
+
+    "container_2": [
+        {
+            "label": "Freestyle Stroke",
+            "y": 18
+        },
+        {
+            "label": "Breast Stroke",
+            "y": 29
+        },
+        {
+            "label": "Back Stroke",
+            "y": 40
+        },
+        {
+            "label": "Butterfly Stroke",
+            "y": 34
+        },
+        {
+            "label": "Side Stroke",
+            "y": 24
+        }
+    ],
+    "container_3": {
+        "dataset_1": [
+            {
+                "label": "January",
+                "y": 4500
+            },
+            {
+                "label": "February",
+                "y": 3250
+            },
+            {
+                "label": "March",
+                "y": 4000
+            },
+            {
+                "label": "April",
+                "y": 3740
+            },
+            {
+                "label": "May",
+                "y": 2400
+            }
+        ],
+        "dataset_2": [
+            {
+                "label": "January",
+                "y": 5400
+            },
+            {
+                "label": "February",
+                "y": 3100
+            },
+            {
+                "label": "March",
+                "y": 2870
+            },
+            {
+                "label": "April",
+                "y": 3400
+            },
+            {
+                "label": "May",
+                "y": 2380
+            }
+        ]
+    }
+}
+
+
+

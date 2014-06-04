@@ -1,0 +1,66 @@
+<h4>Find a Pool Coach</h4>
+
+
+<div>
+
+    <div id="inputdivv"> <input type="text" id ="myinputt" ng-model="name"><br></div>
+    <div id="scorewrapperr">
+        <ul id = "ulDrag">
+            <li><p id="output" ng-bind="name"></p></li>
+
+        </ul>
+    </div>
+</div>
+
+<div>
+    <section>
+    <div class="row">
+        <div class="-4u 6u">
+            <!--Search Functionality-->
+            <input ng-model="query"
+                   placeholder="Search"
+                   id="ngsearch" type="text"  >
+
+            <h4>Sort by</h4>
+            <select ng-model="orderProp" id = "sortBy"  class ="dropdown">
+                <option value="name" ng-bind-html="HTMLalpha"></option>
+                <option value="price" ng-bind-html="HTMLlowestPrice"></option>
+                <option value="-price" ng-bind-html="HTMLhighestPrice"></option>
+                <option value="category" ng-bind-html="HTMLCategory"></option>
+                <option value="coachemail" ng-bind-html="HTMLemail"></option>
+                <option value="-created_at" ng-bind-html="HTMLcreated_at"></option>
+                <option value="-updated_at" ng-bind-html="HTMLupdatedAt"></option>
+                <option value="-id" ng-bind-html="HTMLid"></option>
+            </select>
+        </div>
+
+
+        <div class="row">
+            <div class="-2u 10u">
+                <!--Table of Products-->
+                <ul>
+                    <li ng-repeat="coach in coachList | filter:query | orderBy:orderProp">
+
+                       <span class ="myspan2">
+
+                           <a href="#/view7" ng-click="active='partialSeven'" class="partialSeven"><img ng-src="./img/{{coach.image_url}} "></a>
+
+
+
+                       </span>
+                       <span id = "myFirstName" class ="myspan">{{myFirstName(coach.name)}}</span>
+                       <span class ="myspan"> {{coach.category}}</span>
+
+                       <span class ="myspan">{{coach.price | nfcurrency:"&euro;" }}/hr</span>
+                        <span class ="myspan"> {{coach.coachemail}}</span>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </section>
+</div>
+
+
+
