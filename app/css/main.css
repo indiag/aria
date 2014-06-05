@@ -91,6 +91,24 @@ textarea {
     width: 50%;
 }
 
+#myinput2 {
+
+     display: inline-block;
+     width: 50%;
+ }
+
+#myinput3 {
+
+    display: inline-block;
+    width: 50%;
+}
+
+#myinput4 {
+
+    display: inline-block;
+    width: 50%;
+}
+
 #scorewrapper {
     background-color: #F2F1F0;
     text-align: center;
@@ -98,13 +116,21 @@ textarea {
     margin-left: 50px;
     visibility: hidden;
     border-radius: 25px;
-    box-shadow: 10px 10px 5px #888888;
+
 }
 
-#output {
+#output{
     font-family: Verdana sans-serif;
     padding: 10px;
     font-size: 50px;
+    text-align: center;
+    margin: 20px;
+}
+
+#output2 {
+    font-family: Verdana sans-serif;
+    padding: 10px;
+    font-size: 20px;
     text-align: center;
     margin: 20px;
 }
@@ -117,6 +143,12 @@ textarea {
     display: inline-block;
 }
 
+#loginid {visibility:hidden;
+    font-family: Verdana sans-serif;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px;}
 /* ==========================================================================
    Browse Happy prompt
    ========================================================================== */

@@ -3,28 +3,28 @@
 
 angular.module('myApp.controllers', ['ngSanitize'])
 
-    .controller('MyCtrl1', function($scope) {
+    .controller('MyCtrl1', function ($scope) {
         //Partial One code Goes Here
         //alert('hello from partial One')
     })
-    .controller('MyCtrl2', function($scope, $http) {
-        $http.get('./SwimmingCoaches.json').success(function(data) {
+    .controller('MyCtrl2', function ($scope, $http) {
+        $http.get('./SwimmingCoaches.json').success(function (data) {
             $scope.coachList = data;
         });
         $scope.orderProp = 'name';
 
-        $scope.HTMLalpha="Alphabetical";
-        $scope.HTMLlowestPrice="Lowest Price";
-        $scope.HTMLhighestPrice="Highest Price";
-        $scope.HTMLCategory="Category";
-        $scope.HTMLemail="Email";
-        $scope.HTMLcreated_at="Created At";
-        $scope.HTMLupdatedAt="Updated At";
-        $scope.HTMLid="Id";
+        $scope.HTMLalpha = "Alphabetical";
+        $scope.HTMLlowestPrice = "Lowest Price";
+        $scope.HTMLhighestPrice = "Highest Price";
+        $scope.HTMLCategory = "Category";
+        $scope.HTMLemail = "Email";
+        $scope.HTMLcreated_at = "Created At";
+        $scope.HTMLupdatedAt = "Updated At";
+        $scope.HTMLid = "Id";
 
         //$scope.orderPropAlt = 'email';
-        $scope.myFirstName = function(string) {
-            return  string.split(' ')[0]
+        $scope.myFirstName = function (string) {
+            return string.split(' ')[0]
         }
 
 
@@ -61,7 +61,7 @@ angular.module('myApp.controllers', ['ngSanitize'])
 
                     if (address == pool[0]) {
 
-                        document.getElementById('l1').innerHTML = pool[0]+ 'Tel: 01-2323456';
+                        document.getElementById('l1').innerHTML = pool[0] + 'Tel: 01-2323456';
 
                     }
                     if (address == pool[1]) {
@@ -101,7 +101,7 @@ angular.module('myApp.controllers', ['ngSanitize'])
 
         FindLocation();
 
-        $scope.updateFn = function() {
+        $scope.updateFn = function () {
             FindLocation();
         };
 
@@ -111,111 +111,119 @@ angular.module('myApp.controllers', ['ngSanitize'])
          return false;
          }, false);*/
 
-    }).controller('MyCtrl4', function($scope, $http) {
+    }).controller('MyCtrl4', function ($scope, $http) {
 
         //$scope.workout_data = null;
         $http.get('./workout_data_1.json').success(function (result) {
-                $scope.workout_data = result;
-                function WorkoutStatistics() {
+            $scope.workout_data = result;
+            function WorkoutStatistics() {
 
-                    var chart1 = new CanvasJS.Chart("chartContainer_1", {
-                        theme: "theme1",
-                        title: {
-                            text: "Exercise type [%]",
-                            fontWeight: "bolder",
-                            fontColor: "#0D8AAA",
-                            fontFamily: "tahoma",
-                            fontSize: 20,
-                            padding: 10
-                        },
-                        data: [//array of dataSeries
-                            { //dataSeries object
+                var chart1 = new CanvasJS.Chart("chartContainer_1", {
+                    theme: "theme1",
+                    title: {
+                        text: "Exercise type [%]",
+                        fontWeight: "bolder",
+                        fontColor: "#0D8AAA",
+                        fontFamily: "tahoma",
+                        fontSize: 20,
+                        padding: 10
+                    },
+                    data: [//array of dataSeries
+                        { //dataSeries object
 
-                                /*** Change type "column" to "bar", "area", "line" or "pie"***/
-                                type: "doughnut",
-                                indexLabelPlacement: "outside",
-                                showInLegend: true,
-                                dataPoints: $scope.workout_data['container_1']
-                            }
-                        ]
-                    });
-                    chart1.render();
-                    chart1 = {};
-
-                    var chart2 = new CanvasJS.Chart("chartContainer_2", {
-                        theme: "theme1",
-                        title: {
-                            text: " Total Workout [min]",
-                            fontWeight: "bolder",
-                            fontColor: "#0D8AAA",
-                            fontFamily: "tahoma",
-                            fontSize: 20,
-                            padding: 10
-                        },
-                        data: [//array of dataSeries
-                            { //dataSeries object
-
-                                /*** Change type "column" to "bar", "area", "line" or "pie"***/
-                                type: "bar",
-                                dataPoints:$scope.workout_data['container_2']
-
-                            }
-                        ]
-                    });
-                    chart2.render();
-                    chart2 = {};
-
-                    var chart3 = new CanvasJS.Chart("chartContainer_3", {
-
-                        theme: "theme1",
-
-                        title: {
-                            text: "Total calories burned [kcal]",
-                            fontWeight: "bolder",
-                            fontColor: "#0D8AAA",
-                            fontFamily: "tahoma",
-                            fontSize: 20,
-                            padding: 10
-                        },
-
-                        data: [  //array of dataSeries
-                            { //dataSeries - first quarter
-                                /*** Change type "column" to "bar", "area", "line" or "pie"***/
-                                type: "column",
-                                name: "You",
-                                showInLegend: true,
-                                dataPoints: $scope.workout_data['container_3']['dataset_1']
-                            },
-
-                            { //dataSeries - second quarter
-
-                                type: "column",
-                                name: "Average user",
-                                showInLegend: true,
-                                dataPoints: $scope.workout_data['container_3']['dataset_2']
-                            }
-                        ],
-                        /** Set axisY properties here*/
-                        axisY: {
-                            suffix: "kcal"
+                            /*** Change type "column" to "bar", "area", "line" or "pie"***/
+                            type: "doughnut",
+                            indexLabelPlacement: "outside",
+                            showInLegend: true,
+                            dataPoints: $scope.workout_data['container_1']
                         }
-                    });
-                    chart3.render();
-                    chart3 = {};
-                }
+                    ]
+                });
+                chart1.render();
+                chart1 = {};
 
-                WorkoutStatistics();
+                var chart2 = new CanvasJS.Chart("chartContainer_2", {
+                    theme: "theme1",
+                    title: {
+                        text: " Total Workout [min]",
+                        fontWeight: "bolder",
+                        fontColor: "#0D8AAA",
+                        fontFamily: "tahoma",
+                        fontSize: 20,
+                        padding: 10
+                    },
+                    data: [//array of dataSeries
+                        { //dataSeries object
+
+                            /*** Change type "column" to "bar", "area", "line" or "pie"***/
+                            type: "bar",
+                            dataPoints: $scope.workout_data['container_2']
+
+                        }
+                    ]
+                });
+                chart2.render();
+                chart2 = {};
+
+                var chart3 = new CanvasJS.Chart("chartContainer_3", {
+
+                    theme: "theme1",
+
+                    title: {
+                        text: "Total calories burned [kcal]",
+                        fontWeight: "bolder",
+                        fontColor: "#0D8AAA",
+                        fontFamily: "tahoma",
+                        fontSize: 20,
+                        padding: 10
+                    },
+
+                    data: [  //array of dataSeries
+                        { //dataSeries - first quarter
+                            /*** Change type "column" to "bar", "area", "line" or "pie"***/
+                            type: "column",
+                            name: "You",
+                            showInLegend: true,
+                            dataPoints: $scope.workout_data['container_3']['dataset_1']
+                        },
+
+                        { //dataSeries - second quarter
+
+                            type: "column",
+                            name: "Average user",
+                            showInLegend: true,
+                            dataPoints: $scope.workout_data['container_3']['dataset_2']
+                        }
+                    ],
+                    /** Set axisY properties here*/
+                    axisY: {
+                        suffix: "kcal"
+                    }
+                });
+                chart3.render();
+                chart3 = {};
             }
+
+            WorkoutStatistics();
+        }
         );
 
-   }).controller('MyCtrl5', function () {
+    }).controller('MyCtrl5', function () {
 
         //alert('helo') 
         //Partial five code Goes Here
         //alert('hello from partial Five')
-    }).controller('MyCtrl6', function () {
+    }).controller('MyCtrl6', function ($scope) {
         //controller six 
         //alert('helo')
+
+        $scope.myfunction = function () {
+
+            document.getElementById('loginid').style.visibility = 'visible';
+        };
+
+        $scope.text = 'venkat@example.com';
+
 
         var mymodule = (function () {
             //Private
@@ -255,9 +263,9 @@ angular.module('myApp.controllers', ['ngSanitize'])
             mymodule.hideDivs('scorewrapper');
             return false;
         }, false);
-       
 
-    }).filter('nfcurrency', [ '$filter', '$locale', function ($filter, $locale) {
+
+    }).filter('nfcurrency', ['$filter', '$locale', function ($filter, $locale) {
         var currency = $filter('currency'), formats = $locale.NUMBER_FORMATS;
         return function (amount, symbol) {
             var value = currency(amount, symbol);
@@ -266,49 +274,50 @@ angular.module('myApp.controllers', ['ngSanitize'])
     }])
     .controller('MyCtrl8', function ($scope) {
 
-       
 
-    $scope.markup = function(arg) {
 
-        return arg + 100 * arg};
+        $scope.markup = function (arg) {
 
-    $scope.services = [
-        {
-            name: "Gymnasium",
-            price: 300,
-            active: true
-        },
-        {
-            name: "Spa",
-            price: 400,
-            active: false
-        },
-        {
-            name: "Aerobics ",
-            price: 300,
-            active: false
-        },
-        {
-            name: "Massage Room",
-            price: 220,
-            active: false
-        }
-    ];
+            return arg + 100 * arg
+        };
 
-    $scope.toggleActive = function($scope) {
-        s.active = !s.active
-    };
-
-    $scope.total = function() {
-        var total = 0;
-
-        angular.forEach($scope.services, function(s) {
-            if (s.active) {
-                total+= s.price;
+        $scope.services = [
+            {
+                name: "Gymnasium",
+                price: 300,
+                active: true
+            },
+            {
+                name: "Spa",
+                price: 400,
+                active: false
+            },
+            {
+                name: "Aerobics ",
+                price: 300,
+                active: false
+            },
+            {
+                name: "Massage Room",
+                price: 220,
+                active: false
             }
-        });
-        return total;
-    } ;
-});
+        ];
+
+        $scope.toggleActive = function ($scope) {
+            s.active = !s.active
+        };
+
+        $scope.total = function () {
+            var total = 0;
+
+            angular.forEach($scope.services, function (s) {
+                if (s.active) {
+                    total += s.price;
+                }
+            });
+            return total;
+        };
+    });
 
 
