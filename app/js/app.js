@@ -18,8 +18,8 @@ config(['$routeProvider', function ($routeProvider) {
     $routeProvider.when('/view4', { templateUrl: 'partials/partial4.html', controller: 'MyCtrl4' });
     $routeProvider.when('/view5', { templateUrl: 'partials/partial5.html', controller: 'MyCtrl5' });
     $routeProvider.when('/view6', { templateUrl: 'partials/partial6.html', controller: 'MyCtrl6' });
-    $routeProvider.when('/view7', { templateUrl: 'partials/partial7.html', controller: 'MyCtrl7' });
-    $routeProvider.when('/view8', { templateUrl: 'partials/partial8.html', controller: 'MyCtrl8' });
+
+  
 
 
     $routeProvider.otherwise({ redirectTo: '/view1' });

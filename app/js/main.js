@@ -44,13 +44,13 @@ var mymodule = (function () {
 
 
 //AddEventListener
-mymodule.$$('myinput').addEventListener('focus',function () {
+mymodule.$$('myinput').addEventListener('focus', function () {
 
     mymodule.showDivs('scorewrapper');
     return false;
 }, false);
 
-mymodule.$$('myinput').addEventListener('blur',function () {
+mymodule.$$('myinput').addEventListener('blur', function () {
 
     mymodule.hideDivs('scorewrapper');
     return false;
