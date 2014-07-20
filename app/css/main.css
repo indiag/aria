@@ -33,7 +33,7 @@ html {
     text-shadow: none;
 }
 
-::selection {
+::selection m
     background: #b3d4fc;
     text-shadow: none;
 }
@@ -138,6 +138,8 @@ textarea {
 #ulDrag {display: inline-block;
     list-style: none;
 }
+
+
 
 #shoppingcart{text-align: center;
     display: inline-block;
@@ -399,8 +401,36 @@ img{
     }
 }
 
-#chartContainer_1, #chartContainer_2, #chartContainer_3 {
-    height: 400px;
-    width: 100%;
+#mycontainer{
     position: relative;
+    background-color: #fff;}
+#chartContainer_1 {
+    position: absolute;
+    top: 0;
+    left:0;
+    visibility:visible;
+    z-index: 10;}
+
+#chartContainer_2 {position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;}
+#chartContainer_3 {
+    position: absolute;
+    visibility:hidden;
+    top: 0;
+    left: 0;}
+
+
+#mycontainer, #chartContainer_1, #chartContainer_2, #chartContainer_3 {
+    height: 400px;
+
+
+}
+
+
+#mybreadcrumbs {width: 100%;
+                padding-bottom: 30px;
+padding-top: 30px;
+margin-left: 10em;
 }

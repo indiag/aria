@@ -1,14 +1,27 @@
 'use strict';
 /* Controllers */
 
-angular.module('myApp.controllers', ['ngSanitize'])
+angular.module('myApp.controllers', ['ngSanitize','angular-flexslider'])
 
     .controller('MyCtrl1', function ($scope) {
-        //Partial One code Goes Here
-        //alert('hello from partial One')
+
+        $scope.slides = [
+          'img/swim1.jpg',
+          'img/swim14s.jpg',
+          'img/slider1.jpg',
+          'img/slider2.jpg',
+          'img/slider3.jpg',
+          'img/slider4.jpg'
+
+         
+
+
+
+        ];
+        
     })
     .controller('MyCtrl2', function ($scope, $http) {
-        $http.get('./SwimmingCoaches.json').success(function (data) {
+        $http.get('./Coaches.json').success(function (data) {
             $scope.coachList = data;
         });
         $scope.orderProp = 'name';
@@ -27,29 +40,27 @@ angular.module('myApp.controllers', ['ngSanitize'])
             return string.split(' ')[0]
         }
 
-
     })
 
 
     .controller('MyCtrl3', function ($scope) {
-        //Partial Three code Goes Here
-        //alert('hello from partial Three')
+       
 
         function FindLocation() {
             //code by Venkat Reddy Gaddam
-            // Msc Web tech
+            
             geocoder = new google.maps.Geocoder();
             InitializeMap();
 
             var address = document.getElementById("addressinput").value;
             var pool = new Array();
-            pool[0] = "Cork Street Dublin";
-            pool[1] = "Quarry Road, Cabra, Dublin";
-            pool[2] = "Bishopstown Road, Cork";
-            pool[3] = "Henry Street, Galway";
-            pool[4] = "Ennis Road,Limerick";
-            pool[5] = "Rindoon Park, Athlone";
-            pool[6] = "Scarlett Street, Drogheda";
+            pool[0] = "Parnell Street Dublin";
+            pool[1] = "Arjun Nagar, Agra, India";
+            pool[2] = "Malakpet,Hyderbad, India";
+            pool[3] = "Lokhandwala Cirlcle, Mumbai,India";
+            pool[4] = "Cape Town City Centre,Cape Town";
+            pool[5] = "Times Square, New York";
+            pool[6] = "Swinburne Avenue, Victoria ,Australia";
 
             geocoder.geocode({ 'address': address }, function (results, status) {
                 if (status == google.maps.GeocoderStatus.OK) {
@@ -105,18 +116,14 @@ angular.module('myApp.controllers', ['ngSanitize'])
             FindLocation();
         };
 
-        /*document.getElementById('Button1').addEventListener('click',function () {
-
-         FindLocation();
-         return false;
-         }, false);*/
 
     }).controller('MyCtrl4', function ($scope, $http) {
 
-        //$scope.workout_data = null;
-        $http.get('./workout_data_1.json').success(function (result) {
-            $scope.workout_data = result;
-            function WorkoutStatistics() {
+
+
+        $http.get('./Data.json').success(function (result) {
+            $scope.Data = result;
+            function Statistics() {
 
                 var chart1 = new CanvasJS.Chart("chartContainer_1", {
                     theme: "theme1",
@@ -135,7 +142,7 @@ angular.module('myApp.controllers', ['ngSanitize'])
                             type: "doughnut",
                             indexLabelPlacement: "outside",
                             showInLegend: true,
-                            dataPoints: $scope.workout_data['container_1']
+                            dataPoints: $scope.Data['container_1']
                         }
                     ]
                 });
@@ -157,7 +164,7 @@ angular.module('myApp.controllers', ['ngSanitize'])
 
                             /*** Change type "column" to "bar", "area", "line" or "pie"***/
                             type: "bar",
-                            dataPoints: $scope.workout_data['container_2']
+                            dataPoints: $scope.Data['container_2']
 
                         }
                     ]
@@ -184,7 +191,7 @@ angular.module('myApp.controllers', ['ngSanitize'])
                             type: "column",
                             name: "You",
                             showInLegend: true,
-                            dataPoints: $scope.workout_data['container_3']['dataset_1']
+                            dataPoints: $scope.Data['container_3']['dataset_1']
                         },
 
                         { //dataSeries - second quarter
@@ -192,7 +199,7 @@ angular.module('myApp.controllers', ['ngSanitize'])
                             type: "column",
                             name: "Average user",
                             showInLegend: true,
-                            dataPoints: $scope.workout_data['container_3']['dataset_2']
+                            dataPoints: $scope.Data['container_3']['dataset_2']
                         }
                     ],
                     /** Set axisY properties here*/
@@ -204,18 +211,22 @@ angular.module('myApp.controllers', ['ngSanitize'])
                 chart3 = {};
             }
 
-            WorkoutStatistics();
+            Statistics();
         }
         );
 
+        // change Divs
+        $scope.changeDivs = function (myId1, myId2, myId3) {
+
+            document.getElementById(myId1).style.visibility = 'visible';
+            document.getElementById(myId2).style.visibility = 'hidden';
+            document.getElementById(myId3).style.visibility = 'hidden';
+        }
+
     }).controller('MyCtrl5', function () {
 
-        //alert('helo') 
-        //Partial five code Goes Here
-        //alert('hello from partial Five')
     }).controller('MyCtrl6', function ($scope) {
-        //controller six 
-        //alert('helo')
+ 
 
         $scope.myfunction = function () {
 
@@ -318,6 +329,21 @@ angular.module('myApp.controllers', ['ngSanitize'])
             });
             return total;
         };
+    }).directive('jqdatepicker', function () {
+        return {
+            restrict: 'A',
+            require: 'ngModel',
+            link: function (scope, element, attrs, ngModelCtrl) {
+                $(element).datepicker({
+                    dateFormat: 'DD, d  MM, yy',
+                    onSelect: function (date) {
+                        scope.date = date;
+                        scope.$apply();
+                    }
+                });
+            }
+        };
     });
+
 
 

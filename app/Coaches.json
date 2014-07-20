@@ -2,18 +2,18 @@
     {
         "category": "Swimming",
         "created_at": "2013-12-18T01:49:55Z",
-        "description": "Great ex-Manchester United footballer with a love for booze and women. May be drunk during the lesson",
+        "description": "He is a Music and loves to party a lot.",
         "id": 1,
         "coachemail": "kiran@gmail.com",
         "image_url": "swim3.jpg",
         "name": "Kiran",
-        "price": 5,
+        "price": 50,
         "updated_at": "2013-12-18T11:36:04Z"
     },
     {
         "category": "BackStroke",
         "created_at": "2013-12-18T10:19:30Z",
-        "description": "Prominent ex-Gaelic Footballer and barrister. Will probably remind you that you are useless compared to him",
+        "description": "He is an energetic Cricketer and good Painter",
         "id": 2,
         "coachemail": "Balaji.com",
         "image_url": "swim 4.jpg",
@@ -24,18 +24,18 @@
     {
         "category": "ButterflyStroke",
         "created_at": "2013-12-18T11:42:43Z",
-        "description": "A devious, calculating clever cat with no respect for humans",
+        "description": "A intelligent person who loves to read books a lot ",
         "id": 3,
         "coachemail": "venkat@gmail.com",
         "image_url": "swim 4.jpg",
         "name": "Venkat National",
-        "price": 12,
+        "price": 75,
         "updated_at": "2013-12-18T12:21:15Z"
     },
     {
         "category": "Swimming",
         "created_at": "2013-12-18T12:12:08Z",
-        "description": "Barrister and ex-president of Ireland. Cannot swim but knows how to avoid sinking",
+        "description": "President of NCI.He actually cannot swim but knows how to avoid sinking",
         "id": 4,
         "coachemail": "Vivek@gmail.com",
         "image_url": "swim 5.jpg",
@@ -44,31 +44,30 @@
         "updated_at": "2013-12-18T12:12:08Z"
     },
     {
-        "category": "BackStroke",
-        "created_at": "2013-12-18T12:15:30Z",
-        "description": "Another ex-GAA player, but shouldn't make any difference to your lesson",
+        "category": "BackStroke", 
+        "description": "He is a good Rugby Player and manages to swim",
         "id": 5,
         "coachemail": "karthik@gmail.com",
         "image_url": "swim 6.jpg",
         "name": "karthik",
-        "price": 130,
+        "price": 110,
         "updated_at": "2013-12-18T12:16:44Z"
     },
     {
         "category": "Swimming",
         "created_at": "2013-12-18T12:22:40Z",
-        "description": "Wife of James Joyce. As Ben Dunne says, 'Do as she says, don't do as she does'",
+        "description": "He can actually a Scholar.He likes to swim but caanot do.'",
         "id": 6,
         "coachemail": "Tom@gmail.com",
         "image_url": "swim 7.jpg",
         "name": "Tom",
-        "price": 145.0,
+        "price": 90.0,
         "updated_at": "2013-12-18T12:22:40Z"
     },
     {
         "category": "Swimming",
         "created_at": "2013-12-18T12:29:13Z",
-        "description": "A former member of Thin Lizzy",
+        "description": "A former member of Bendunne Gym.He likes to swim a lot",
         "id": 7,
         "coachemail": "Henry@gmail.com",
         "image_url": "swim 8.jpg",
@@ -79,7 +78,7 @@
     {
         "category": "BackStroke",
         "created_at": "2013-12-18T12:35:10Z",
-        "description": "Co-discoverer of the structure of DNA",
+        "description": "Loves to Adventure a lot.He also manages to Swim well",
         "id": 8,
         "coachemail": "james@gmail.com",
         "image_url": "swim 9.jpg",
@@ -90,7 +89,7 @@
     {
         "category": "ButterflyStroke",
         "created_at": "2013-12-18T12:44:08Z",
-        "description": "Founding member of U2",
+        "description": "He is a Recruitment Officer in Dublin.He goes for Swimming when he is free",
         "id":9,
         "coachemail": "Latif@gmail.com",
         "image_url": "swim 10.jpg",
@@ -101,7 +100,7 @@
     {
         "category": "Swimming",
         "created_at": "2013-12-18T12:49:32Z",
-        "description": "This discoverer of the alpha helix.  Missed the structure of DNA.  Likes his Vitamen C.",
+        "description": "He is a software Engineer. He likes to enjoy a lot with his friends as he is obsessed with Work.",
         "id": 10,
         "coachemail": "Jimmy@gmail.com",
         "image_url": "swim 11.gif",
@@ -112,7 +111,7 @@
     {
         "category": "BackStroke",
         "created_at": "2013-12-18T12:51:40Z",
-        "description": "A coach who likes his McDonald's burgers after work.",
+        "description": "He is a Rugby Coach.He is very good at Swimming.",
         "id": 11,
         "coachemail": "Pavan@gmail.com",
         "image_url": "swim 12.jpg",
@@ -123,7 +122,7 @@
     {
         "category": "BackStroke",
         "created_at": "2013-12-18T12:53:17Z",
-        "description": "Irish poet and Nobel Laureate",
+        "description": "He is a Good Athelete.He enjoys to swim a lot at free times",
         "id": 12,
         "coachemail": "Sean@gmail.com",
         "image_url": "swim 13.jpg",
