@@ -163,7 +163,7 @@ textarea {
 }
 
 .ulfooter {
-    padding-left: 10px;
+    padding-left: 0px;
 }
 /* ==========================================================================
    Author's custom styles
@@ -257,7 +257,7 @@ img{
     padding: 0;
     position: absolute;
     width: 1px;
-}
+}l
 
 /*
  * Extends the .visuallyhidden class to allow the element to be focusable
