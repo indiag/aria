@@ -1,0 +1,133 @@
+[
+    {
+        "category": "Swimming",
+        "created_at": "2013-12-18T01:49:55Z",
+        "description": "He is a Music and loves to party a lot.",
+        "id": 1,
+        "coachemail": "kiran@gmail.com",
+        "image_url": "swim3.jpg",
+        "name": "Kiran",
+        "price": 50,
+        "updated_at": "2013-12-18T11:36:04Z"
+    },
+    {
+        "category": "BackStroke",
+        "created_at": "2013-12-18T10:19:30Z",
+        "description": "He is an energetic Cricketer and good Painter",
+        "id": 2,
+        "coachemail": "Balaji.com",
+        "image_url": "swim 4.jpg",
+        "name": "Balaji",
+        "price": 45,
+        "updated_at": "2013-12-18T12:10:21Z"
+    },
+    {
+        "category": "ButterflyStroke",
+        "created_at": "2013-12-18T11:42:43Z",
+        "description": "A intelligent person who loves to read books a lot ",
+        "id": 3,
+        "coachemail": "venkat@gmail.com",
+        "image_url": "swim 4.jpg",
+        "name": "Venkat National",
+        "price": 75,
+        "updated_at": "2013-12-18T12:21:15Z"
+    },
+    {
+        "category": "Swimming",
+        "created_at": "2013-12-18T12:12:08Z",
+        "description": "President of NCI.He actually cannot swim but knows how to avoid sinking",
+        "id": 4,
+        "coachemail": "Vivek@gmail.com",
+        "image_url": "swim 5.jpg",
+        "name": "Vivek",
+        "price": 100.0,
+        "updated_at": "2013-12-18T12:12:08Z"
+    },
+    {
+        "category": "BackStroke", 
+        "description": "He is a good Rugby Player and manages to swim",
+        "id": 5,
+        "coachemail": "karthik@gmail.com",
+        "image_url": "swim 6.jpg",
+        "name": "karthik",
+        "price": 110,
+        "updated_at": "2013-12-18T12:16:44Z"
+    },
+    {
+        "category": "Swimming",
+        "created_at": "2013-12-18T12:22:40Z",
+        "description": "He can actually a Scholar.He likes to swim but caanot do.'",
+        "id": 6,
+        "coachemail": "Tom@gmail.com",
+        "image_url": "swim 7.jpg",
+        "name": "Tom",
+        "price": 90.0,
+        "updated_at": "2013-12-18T12:22:40Z"
+    },
+    {
+        "category": "Swimming",
+        "created_at": "2013-12-18T12:29:13Z",
+        "description": "A former member of Bendunne Gym.He likes to swim a lot",
+        "id": 7,
+        "coachemail": "Henry@gmail.com",
+        "image_url": "swim 8.jpg",
+        "name": "Henry",
+        "price": 2440,
+        "updated_at": "2013-12-18T12:32:00Z"
+    },
+    {
+        "category": "BackStroke",
+        "created_at": "2013-12-18T12:35:10Z",
+        "description": "Loves to Adventure a lot.He also manages to Swim well",
+        "id": 8,
+        "coachemail": "james@gmail.com",
+        "image_url": "swim 9.jpg",
+        "name": "James Watson",
+        "price": 33.0,
+        "updated_at": "2014-01-28T17:48:53Z"
+    },
+    {
+        "category": "ButterflyStroke",
+        "created_at": "2013-12-18T12:44:08Z",
+        "description": "He is a Recruitment Officer in Dublin.He goes for Swimming when he is free",
+        "id":9,
+        "coachemail": "Latif@gmail.com",
+        "image_url": "swim 10.jpg",
+        "name": "Latif",
+        "price": 454.0,
+        "updated_at": "2013-12-18T12:44:08Z"
+    },
+    {
+        "category": "Swimming",
+        "created_at": "2013-12-18T12:49:32Z",
+        "description": "He is a software Engineer. He likes to enjoy a lot with his friends as he is obsessed with Work.",
+        "id": 10,
+        "coachemail": "Jimmy@gmail.com",
+        "image_url": "swim 11.gif",
+        "name": "Jimmy",
+        "price": 34.0,
+        "updated_at": "2013-12-18T12:50:05Z"
+    },
+    {
+        "category": "BackStroke",
+        "created_at": "2013-12-18T12:51:40Z",
+        "description": "He is a Rugby Coach.He is very good at Swimming.",
+        "id": 11,
+        "coachemail": "Pavan@gmail.com",
+        "image_url": "swim 12.jpg",
+        "name": "Pavan",
+        "price": 45.0,
+        "updated_at": "2013-12-18T12:51:40Z"
+    },
+    {
+        "category": "BackStroke",
+        "created_at": "2013-12-18T12:53:17Z",
+        "description": "He is a Good Athelete.He enjoys to swim a lot at free times",
+        "id": 12,
+        "coachemail": "Sean@gmail.com",
+        "image_url": "swim 13.jpg",
+        "name": "Sean",
+        "price": 33.0,
+        "updated_at": "2013-12-22T16:26:57Z"
+    }
+]

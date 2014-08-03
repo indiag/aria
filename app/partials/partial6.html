@@ -1,0 +1,48 @@
+﻿
+<h4>Please Enter Your Membership Number: </h4>
+
+
+<div>
+    <form>
+    <div id="inputdiv"> <input type="text" id="myinput" ng-model="name"><br></div>
+
+    </form>
+    <div id="scorewrapper">
+        <ul id = "ulDrag">
+            <li><p id="output" ng-bind="name"></p></li>
+
+        </ul>
+    </div>
+
+<div class="-3u 6u">
+
+    <a href="#/view1"  class="button" ng-click="myfunction()">Submit</a>
+</div>
+    <h4>Please Login with Your Email Address: </h4>
+    <form name="myForm">
+        Email: <input type="email" name="input" id ="myinput2" ng-model="text" required>
+  <span class="error" id ="myinput4" ng-show="myForm.input.$error.required">
+    Required!</span>
+  <span class="error" id ="myinput3" ng-show="myForm.input.$error.email">
+    Not valid email!</span>
+        <div id ="output2">{{text}}</div><br/>
+
+    </form>
+
+    </div>
+
+<a href="#/view1"  class="button" ng-click="myfunction()">Submit</a>
+
+
+
+<!--datepicker-->
+<div class="row">
+
+    <div><input type="text" ng-model="date" jqdatepicker  /></div>
+</div>
+
+
+<div class="row">
+
+    <div><h3>{{ date }}</h3></div>
+</div>
